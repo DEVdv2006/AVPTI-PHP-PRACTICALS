@@ -3,7 +3,7 @@ $firstname="";
 $email="";
 $region="";
 $season="";
-$intrests="";
+$intrests;
 $participants=0;
 $message="";
 $token="";
@@ -34,7 +34,9 @@ else{
 //6 participants
 //7 message
 //8 token
-
+foreach($_POST['interests'] as $i){
+   echo $i."<br>";
+}
 
 if($errors)
 {
